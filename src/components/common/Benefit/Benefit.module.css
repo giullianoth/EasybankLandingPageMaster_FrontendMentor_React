@@ -1,0 +1,25 @@
+.benefit {
+    text-align: center;
+}
+
+.benefit__icon {
+    margin-bottom: 20px;
+}
+
+.benefit__icon img {
+    margin-inline: auto;
+}
+
+.benefit__title {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    .benefit {
+        text-align: left;
+    }
+
+    .benefit__icon img {
+        margin: 0;
+    }
+}
