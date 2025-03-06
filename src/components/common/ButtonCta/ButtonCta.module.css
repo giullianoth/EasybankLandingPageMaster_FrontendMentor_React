@@ -1,0 +1,16 @@
+.cta {
+    display: inline-block;
+    border: none;
+    background-image: var(--gradient-theme);
+    padding: 12px 24px;
+    text-align: center;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+    cursor: pointer;
+    border-radius: 50px;
+    transition: var(--transition-duration);
+}
+
+.cta:hover {
+    opacity: 0.6;
+}
