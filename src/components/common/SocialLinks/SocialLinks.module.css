@@ -1,0 +1,12 @@
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+@media screen and (min-width: 992px) {
+    .socialLinks {
+        justify-content: flex-start;
+    }
+}

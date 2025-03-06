@@ -1,0 +1,7 @@
+.footerMenuItem {
+    flex-basis: 50%;
+}
+
+.footerMenuItem a:hover {
+    color: var(--color-lime-green);
+}
