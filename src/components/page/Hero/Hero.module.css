@@ -1,0 +1,128 @@
+.hero {
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.hero__background {
+    width: 100%;
+    position: relative;
+    max-height: 939px;
+    margin-bottom: -60px;
+}
+
+.hero__background1 img {
+    width: 100%;
+    max-height: 700px;
+}
+
+.hero__background2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero__background2 img {
+    width: 100%;
+    max-width: var(--breakpoint-small);
+    margin-inline: auto;
+    margin-top: -70px;
+}
+
+.hero__container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.hero__content {
+    max-width: 460px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero__title {
+    margin-bottom: 20px;
+}
+
+.hero__title h1 {
+    font-size: 2.4em;
+}
+
+.hero__text {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 576px) {
+    .hero__title h1 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero {
+        height: 800px;
+        padding-bottom: 0;
+    }
+
+    .hero__background {
+        width: auto;
+        max-height: none;
+        height: 939px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+    }
+
+    .hero__background1 {
+        height: 800px;
+    }
+
+    .hero__background1 img {
+        max-height: none;
+        width: auto;
+        height: 100%;
+        margin-left: auto;
+        transform: translateX(36%);
+    }
+
+    .hero__background2 img {
+        max-width: none;
+        width: auto;
+        height: 939px;
+        margin-right: 0;
+        transform: translateX(34%);
+    }
+
+    .hero__container {
+        height: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .hero__content {
+        max-width: 400px;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero__background1 img {
+        transform: translateX(17%);
+    }
+
+    .hero__background2 img {
+        transform: translateX(17%);
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .hero__content {
+        max-width: 560px;
+    }
+}
