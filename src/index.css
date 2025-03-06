@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* BREAKPOINTS - based on avaliable breakpoints by Bootstrap (https://getbootstrap.com/docs/5.3/layout/breakpoints/#available-breakpoints) */
+  --breakpoint-small: 576px;
+  --breakpoint-medium: 768px;
+  --breakpoint-large: 992px;
+  --breakpoint-x-large: 1200px;
+  --breakpoint-x-x-large: 1440px;
+
+  /* COLORS */
+  /* Primary */
+  --color-dark-blue: hsl(233, 26%, 24%);
+  --color-lime-green: hsl(136, 65%, 51%);
+  --color-bright-cyan: hsl(192, 70%, 51%);
+
+  --gradient-theme: linear-gradient(45deg, var(--color-lime-green), var(--color-bright-cyan));
+  --gradient-overlay: linear-gradient(hsla(233, 26%, 24%, 0.8), hsla(233, 26%, 24%, 0));
+
+  /* Neutral */
+  --color-grayish-blue: hsl(233, 8%, 62%);
+  --color-light-grayish-blue: hsl(220, 16%, 96%);
+  --color-very-light-gray: hsl(0, 0%, 98%);
+  --color-white: hsl(0, 0%, 100%);
+
+  /* TYPOGRAPHY */
+  /* Body Copy */
+  --font-size-default: 1rem;
+
+  /* Font */
+  --font-public-sans: "Public Sans", sans-serif;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  --transition-duration: 0.3s;
+
+  --shaded-box: 0 1px 8px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-public-sans);
+  font-size: var(--font-size-default);
+  color: var(--color-grayish-blue);
+  background-color: var(--color-very-light-gray);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-regular);
+  color: var(--color-dark-blue);
+}
+
+h1 {
+  font-size: 2em;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-duration);
+}
+
+p {
+  line-height: 1.6;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
